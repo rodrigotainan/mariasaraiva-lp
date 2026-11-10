@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maria Saraiva — Estética Avançada | Águas Claras – DF</title>
+<meta name="description" content="Estética facial e corporal em Águas Claras – DF, com avaliação presencial e planejamento individual. Enfermeira Maria Saraiva — COREN-DF 687.614.">
+<meta name="theme-color" content="#F7F1EA">
+
+<!--
+  ============================================================
+  CONFIGURAÇÃO DE RASTREAMENTO (leia o guia antes de publicar)
+  1) Troque GTM-XXXXXXX pelo ID do seu contêiner do Google Tag Manager
+     (aparece em 2 lugares: aqui no <head> e no <noscript> logo após <body>).
+  2) O Modo de Consentimento v2 começa NEGADO e só libera os cookies
+     de medição/anúncios quando a pessoa clica em "Aceitar" (LGPD).
+  3) Eventos enviados ao dataLayer para o GTM:
+       whatsapp_click  -> clique em qualquer botão de WhatsApp (param: cta_local, interesse)
+       generate_lead   -> envio do formulário (param: interesse, user_data.phone_number)
+       phone_click     -> clique no telefone
+  ============================================================
+-->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  (function () {
+    var saved = null;
+    try { saved = localStorage.getItem('ms_consent'); } catch (e) {}
+    var granted = saved === 'granted';
+    gtag('consent', 'default', {
+      ad_storage: granted ? 'granted' : 'denied',
+      ad_user_data: granted ? 'granted' : 'denied',
+      ad_personalization: 'denied',          /* sem remarketing: categoria sensível de saúde */
+      analytics_storage: granted ? 'granted' : 'denied',
+      wait_for_update: 500
+    });
+  })();
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){if(i.indexOf('XXXX')>-1)return;w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bege:#F7F1EA; --nude:#EBD9CE; --rose:#D9A99B; --terracota:#A9705F; --cafe:#5C4A42;
+    --branco:#FFFDFB; --linha:rgba(92,74,66,.14);
+    --serif:'Cormorant Garamond',Georgia,serif; --sans:'Montserrat',system-ui,-apple-system,Segoe UI,sans-serif;
+    --raio:18px; --max:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);font-weight:300;color:var(--cafe);background:var(--bege);line-height:1.65;font-size:16px;-webkit-font-smoothing:antialiased}
+  img,svg{display:block;max-width:100%}
+  a{color:inherit}
+  h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.15;color:var(--cafe)}
+  h1{font-size:clamp(2.1rem,6.4vw,3.6rem);letter-spacing:-.01em}
+  h2{font-size:clamp(1.8rem,4.6vw,2.6rem)}
+  h3{font-size:1.45rem}
+  strong{font-weight:500}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  section{padding:72px 0}
+  .eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;color:var(--terracota);font-weight:500;margin-bottom:14px}
+  .lead{font-size:1.06rem;max-width:36em}
+
+  /* Botões */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:999px;
+       font-family:var(--sans);font-weight:500;font-size:1rem;text-decoration:none;border:0;cursor:pointer;transition:transform .15s ease,background .2s ease}
+  .btn:active{transform:scale(.98)}
+  .btn-primary{background:var(--terracota);color:#fff}
+  .btn-primary:hover{background:#965f50}
+  .btn-ghost{background:transparent;color:var(--cafe);border:1px solid var(--cafe)}
+  .btn svg{width:20px;height:20px;flex:none}
+
+  /* Cabeçalho */
+  header{position:sticky;top:0;z-index:20;background:rgba(247,241,234,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--linha)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;flex-direction:column;line-height:1;text-decoration:none}
+  .logo b{font-family:var(--serif);font-weight:600;font-size:1.45rem;letter-spacing:.02em}
+  .logo small{font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--terracota);margin-top:4px}
+  header .btn{min-height:42px;padding:0 18px;font-size:.88rem}
+
+  /* Hero */
+  .hero{padding:48px 0 64px;background:linear-gradient(180deg,var(--bege) 0%,var(--nude) 100%)}
+  .hero-grid{display:grid;gap:36px;align-items:center}
+  .hero p.lead{margin:18px 0 28px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .trust{list-style:none;margin-top:28px;display:grid;gap:10px;font-size:.92rem}
+  .trust li{display:flex;gap:10px;align-items:flex-start}
+  .trust li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--terracota);margin-top:.55em;flex:none}
+  /* Foto recortada sobre degradê rosé → terracota: cabelo escuro contrasta com o rosé (topo)
+     e o jaleco branco contrasta com o terracota (base) */
+  .hero-art{position:relative;aspect-ratio:4/5;border-radius:220px 220px var(--raio) var(--raio);overflow:hidden;
+            background:linear-gradient(180deg,var(--rose) 0%,#C48D7E 40%,var(--terracota) 78%);max-width:440px;width:100%;justify-self:center}
+  .hero-art img{position:absolute;left:50%;bottom:0;transform:translateX(-50%);height:96%;width:auto;max-width:none}
+
+  /* Destaque: furo de orelha */
+  .card.card-destaque{background:var(--nude);border-color:transparent}
+  .card-destaque ul{list-style:none;display:grid;gap:8px;margin:6px 0 4px;font-size:.95rem}
+  .card-destaque li{display:flex;gap:10px;align-items:flex-start}
+  .card-destaque li::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--terracota);margin-top:.55em;flex:none}
+
+  /* Tratamentos */
+  .cards{display:grid;gap:16px;margin-top:36px}
+  .card{background:var(--branco);border:1px solid var(--linha);border-radius:var(--raio);padding:26px 24px;display:flex;flex-direction:column;gap:10px}
+  .card .tag{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--terracota);font-weight:500}
+  .card p{font-size:.95rem}
+  .card a{margin-top:auto;padding-top:8px;font-weight:500;color:var(--terracota);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+  .card a:hover{text-decoration:underline}
+
+  /* Passos */
+  .steps{display:grid;gap:14px;margin-top:36px;counter-reset:s}
+  .step{display:grid;grid-template-columns:52px 1fr;gap:16px;align-items:start;padding:20px 0;border-top:1px solid var(--linha)}
+  .step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:var(--serif);font-size:2rem;color:var(--terracota);line-height:1}
+  .step h3{font-size:1.25rem;margin-bottom:4px}
+  .step p{font-size:.95rem}
+
+  /* Sobre */
+  .about{background:var(--nude)}
+  .about-grid{display:grid;gap:32px;align-items:center}
+  .about-photo{aspect-ratio:1/1;border-radius:var(--raio);background:linear-gradient(180deg,var(--rose) 0%,var(--terracota) 85%);position:relative;overflow:hidden}
+  .about-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top}
+  .coren{display:inline-block;margin-top:18px;padding:8px 14px;border:1px solid var(--cafe);border-radius:999px;font-size:.82rem;font-weight:500}
+
+  /* Formulário */
+  .form-box{background:var(--branco);border:1px solid var(--linha);border-radius:24px;padding:32px 24px;max-width:560px;margin:32px auto 0}
+  .field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+  label{font-size:.85rem;font-weight:500}
+  input,select{font:inherit;font-weight:400;color:var(--cafe);background:var(--bege);border:1px solid var(--linha);border-radius:12px;min-height:52px;padding:0 14px;width:100%}
+  input:focus,select:focus{outline:2px solid var(--rose);outline-offset:1px;border-color:transparent}
+  .form-box .btn{width:100%;margin-top:6px}
+  .fine{font-size:.76rem;opacity:.8;margin-top:12px;text-align:center}
+  .err{color:#a33;font-size:.8rem;display:none}
+
+  /* FAQ */
+  details{border-top:1px solid var(--linha);padding:18px 0}
+  details:last-child{border-bottom:1px solid var(--linha)}
+  summary{cursor:pointer;list-style:none;font-weight:500;display:flex;justify-content:space-between;gap:16px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-family:var(--serif);font-size:1.6rem;line-height:1;color:var(--terracota)}
+  details[open] summary::after{content:"–"}
+  details p{margin-top:10px;font-size:.95rem;max-width:44em}
+
+  /* Local */
+  .local{background:var(--cafe);color:var(--bege)}
+  .local h2{color:var(--bege)}
+  .local .eyebrow{color:var(--rose)}
+  .local-grid{display:grid;gap:28px;margin-top:28px}
+  .local .btn-ghost{color:var(--bege);border-color:var(--bege)}
+  .info dt{font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--rose);margin-top:16px}
+  .info dd{font-size:1rem}
+
+  footer{padding:40px 0 110px;font-size:.8rem;text-align:center}
+  footer p{margin-bottom:8px}
+  footer button{background:none;border:0;font:inherit;text-decoration:underline;color:inherit;cursor:pointer}
+
+  /* WhatsApp flutuante */
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25D366;color:#fff;
+            display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+  .wa-float svg{width:30px;height:30px}
+
+  /* Banner de cookies */
+  .cookie{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--branco);border:1px solid var(--linha);border-radius:18px;
+          padding:18px;box-shadow:0 12px 40px rgba(92,74,66,.18);display:none;max-width:560px;margin:0 auto}
+  .cookie p{font-size:.85rem;margin-bottom:12px}
+  .cookie .row{display:flex;gap:10px}
+  .cookie .btn{flex:1;min-height:46px;font-size:.9rem;padding:0 12px}
+
+  /* Política de privacidade (modal) */
+  dialog{border:0;border-radius:20px;max-width:640px;width:calc(100% - 28px);padding:28px 24px;color:var(--cafe);background:var(--branco)}
+  dialog::backdrop{background:rgba(40,30,26,.5)}
+  dialog h3{margin-bottom:12px}
+  dialog p,dialog li{font-size:.9rem;margin-bottom:10px}
+  dialog ul{padding-left:18px}
+
+  @media (min-width:820px){
+    section{padding:96px 0}
+    .hero{padding:72px 0 96px}
+    .hero-grid{grid-template-columns:1.15fr .85fr}
+    .cards{grid-template-columns:repeat(2,1fr)}
+    .card-destaque{grid-column:1/-1}
+    .steps{grid-template-columns:repeat(2,1fr);column-gap:40px}
+    .about-grid{grid-template-columns:.8fr 1.2fr}
+    .local-grid{grid-template-columns:1fr 1fr}
+    .wa-float{right:28px;bottom:28px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.24 8.24Zm4.52-6.17c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.16.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.22-.16-.47-.29Z"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo" aria-label="Maria Saraiva — Estética Avançada"><b>Maria Saraiva</b><small>Estética Avançada</small></a>
+    <a class="btn btn-primary js-wa" data-cta="header" href="#contato"><svg><use href="#i-wa"/></svg>Agendar</a>
+  </div>
+</header>
+
+<main id="topo">
+  <!-- HERO: o título muda conforme o parâmetro ?t= do anúncio (rugas, labios, colageno, pele) -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow" id="hero-eyebrow">Águas Claras – DF</p>
+        <h1 id="hero-title">Estética avançada em Águas Claras, com planejamento feito para você</h1>
+        <p class="lead" id="hero-lead">Tratamentos faciais e corporais realizados pela enfermeira Maria Saraiva, sempre depois de uma avaliação presencial que considera sua pele, sua rotina e o que você deseja.</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary js-wa" data-cta="hero" href="#contato"><svg><use href="#i-wa"/></svg>Agendar avaliação no WhatsApp</a>
+          <a class="btn btn-ghost" href="#tratamentos">Ver tratamentos</a>
+        </div>
+        <ul class="trust">
+          <li>Enfermeira — COREN-DF 687.614</li>
+          <li>Avaliação presencial antes de qualquer procedimento</li>
+          <li>Atendimento com hora marcada em Águas Claras</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img src="maria-saraiva.webp" width="720" height="1082" alt="Maria Saraiva, enfermeira, sorrindo, de jaleco branco" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+  </section>
+
+  <!-- TRATAMENTOS -->
+  <section id="tratamentos">
+    <div class="wrap">
+      <p class="eyebrow">Tratamentos</p>
+      <h2>O que podemos fazer por você</h2>
+      <p class="lead" style="margin-top:12px">Cada indicação é definida na avaliação. Aqui está um resumo para você saber por onde começar.</p>
+      <div class="cards">
+        <article class="card" id="rugas">
+          <span class="tag">Face</span>
+          <h3>Rugas e linhas de expressão</h3>
+          <p>Tratamento para suavizar as linhas da testa, da região entre as sobrancelhas e ao redor dos olhos, com aplicação planejada para preservar a expressão.</p>
+          <a class="js-wa" data-cta="card" data-interesse="Rugas e linhas de expressão" href="#contato">Quero saber mais →</a>
+        </article>
+        <article class="card" id="preenchimento">
+          <span class="tag">Face</span>
+          <h3>Preenchimento labial e facial</h3>
+          <p>Contorno e hidratação dos lábios, olheiras, malar e mandíbula, com foco em proporção e equilíbrio do rosto.</p>
+          <a class="js-wa" data-cta="card" data-interesse="Preenchimento labial e facial" href="#contato">Quero saber mais →</a>
+        </article>
+        <article class="card" id="colageno">
+          <span class="tag">Face e corpo</span>
+          <h3>Bioestimulador de colágeno</h3>
+          <p>Estímulo à produção de colágeno para trabalhar a flacidez de forma gradual, de acordo com a sua avaliação.</p>
+          <a class="js-wa" data-cta="card" data-interesse="Bioestimulador de colágeno" href="#contato">Quero saber mais →</a>
+        </article>
+        <article class="card" id="pele">
+          <span class="tag">Pele e corpo</span>
+          <h3>Estética facial e corporal</h3>
+          <p>Limpeza de pele, peelings e protocolos corporais para cuidar da textura, do viço e do contorno.</p>
+          <a class="js-wa" data-cta="card" data-interesse="Estética facial e corporal" href="#contato">Quero saber mais →</a>
+        </article>
+        <article class="card card-destaque" id="orelha">
+          <span class="tag">Crianças e adultos</span>
+          <h3>Furo de orelha humanizado</h3>
+          <p>Um procedimento pensado para ser praticamente indolor e sem trauma, feito por enfermeira, dentro dos limites éticos e técnicos da profissão. Para isso, combinamos três recursos:</p>
+          <ul>
+            <li><span><strong>Crioterapia:</strong> resfriamento local da orelha antes da perfuração.</span></li>
+            <li><span><strong>Pomada anestésica:</strong> aplicada antes, para diminuir a sensibilidade da pele.</span></li>
+            <li><span><strong>Esponja vibratória:</strong> a vibração distrai e reduz a percepção da perfuração, especialmente nas crianças.</span></li>
+          </ul>
+          <a class="js-wa" data-cta="card" data-interesse="Furo de orelha humanizado" href="#contato">Quero agendar →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Como funciona</p>
+      <h2>Do primeiro contato ao retorno</h2>
+      <div class="steps">
+        <div class="step"><div><h3>Você chama no WhatsApp</h3><p>Conta o que gostaria de melhorar e escolhe o melhor horário para a avaliação.</p></div></div>
+        <div class="step"><div><h3>Avaliação presencial</h3><p>Anamnese completa, análise da pele e conversa sobre expectativas, histórico e cuidados.</p></div></div>
+        <div class="step"><div><h3>Plano individual</h3><p>Você recebe a indicação, o número de sessões previsto e os valores antes de decidir.</p></div></div>
+        <div class="step"><div><h3>Acompanhamento</h3><p>Orientações de pós-procedimento e retorno agendado para acompanhar sua evolução.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about">
+    <div class="wrap about-grid">
+      <div class="about-photo"><img src="maria-saraiva-retrato.webp" width="600" height="600" alt="Retrato de Maria Saraiva, enfermeira" loading="lazy" decoding="async"></div>
+      <div>
+        <p class="eyebrow">Quem atende você</p>
+        <h2>Maria Saraiva</h2>
+        <p class="lead" style="margin-top:14px">Enfermeira com atuação em estética avançada. Acredito que um bom resultado começa com escuta: entender o que incomoda você, explicar com clareza o que cada técnica pode e não pode fazer e indicar só o que faz sentido para o seu caso.</p>
+        <span class="coren">Maria Saraiva — Enfermeira — COREN-DF 687.614</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULÁRIO -->
+  <section id="contato">
+    <div class="wrap" style="text-align:center">
+      <p class="eyebrow">Agende sua avaliação</p>
+      <h2>Prefere que a gente chame você?</h2>
+      <p class="lead" style="margin:12px auto 0">Deixe seu nome e WhatsApp. Abriremos a conversa já com o seu interesse, para agilizar o agendamento.</p>
+      <form class="form-box" id="lead-form" novalidate style="text-align:left">
+        <div class="field">
+          <label for="f-nome">Seu nome</label>
+          <input id="f-nome" name="nome" autocomplete="given-name" required maxlength="60">
+        </div>
+        <div class="field">
+          <label for="f-tel">WhatsApp com DDD</label>
+          <input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel-national" placeholder="(61) 9 0000-0000" required maxlength="16">
+          <span class="err" id="tel-err">Confira o número com DDD.</span>
+        </div>
+        <div class="field">
+          <label for="f-int">Tenho interesse em</label>
+          <select id="f-int" name="interesse">
+            <option>Ainda não sei, quero uma avaliação</option>
+            <option>Rugas e linhas de expressão</option>
+            <option>Preenchimento labial e facial</option>
+            <option>Bioestimulador de colágeno</option>
+            <option>Estética facial e corporal</option>
+            <option>Furo de orelha humanizado</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" type="submit"><svg><use href="#i-wa"/></svg>Continuar no WhatsApp</button>
+        <p class="fine">Usamos seus dados só para responder ao seu contato. <button type="button" class="js-privacy" style="background:none;border:0;font:inherit;text-decoration:underline;color:inherit;cursor:pointer">Política de privacidade</button>.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section style="padding-top:0">
+    <div class="wrap">
+      <p class="eyebrow">Dúvidas frequentes</p>
+      <h2 style="margin-bottom:24px">Antes de agendar</h2>
+      <details><summary>Quem realiza os procedimentos?</summary><p>Todos os atendimentos são feitos pela enfermeira Maria Saraiva, COREN-DF 687.614, responsável técnica pela clínica.</p></details>
+      <details><summary>Preciso fazer avaliação antes?</summary><p>Sim. Nenhum procedimento é feito sem avaliação presencial. É nela que verificamos histórico de saúde, contraindicações e o que é indicado para você.</p></details>
+      <details><summary>Quanto tempo dura o resultado?</summary><p>Depende do tratamento, do organismo e dos cuidados de cada pessoa. Na avaliação explicamos a duração média esperada para o seu caso, sem promessas genéricas.</p></details>
+      <details><summary>Dói? Tem tempo de recuperação?</summary><p>A maioria dos procedimentos causa desconforto leve e permite voltar à rotina no mesmo dia. Os cuidados específicos são explicados antes e depois de cada sessão.</p></details>
+      <details><summary>O furo de orelha dói? Pode ser feito em crianças?</summary><p>Sim, atendemos crianças e adultos. Combinamos crioterapia, pomada anestésica e esponja vibratória para reduzir ao máximo a sensação da perfuração e evitar trauma, principalmente nas crianças. Os cuidados com a cicatrização são explicados no atendimento.</p></details>
+      <details><summary>Quais são as formas de pagamento?</summary><p>Pix, cartão de débito e crédito. Os valores são apresentados no plano de tratamento, depois da avaliação.</p></details>
+      <details><summary>Onde fica a clínica?</summary><p>No DF Plaza Shopping, Rua Copaíba, salas 1201 a 1203, em Águas Claras – DF. O link para o mapa está logo abaixo.</p></details>
+    </div>
+  </section>
+
+  <!-- LOCAL -->
+  <section class="local">
+    <div class="wrap">
+      <p class="eyebrow">Onde estamos</p>
+      <h2>Águas Claras – DF</h2>
+      <div class="local-grid">
+        <dl class="info">
+          <dt>Endereço</dt><dd id="cfg-endereco">R. Copaíba, DF Plaza Shopping, salas 1201, 1202 e 1203 — Águas Claras, Brasília – DF, CEP 71919-540</dd>
+          <dt>Horário</dt><dd id="cfg-horario">Segunda a sexta, 9h às 19h · Sábado, 9h às 13h</dd>
+          <dt>Telefone / WhatsApp</dt><dd><a id="cfg-tel" class="js-phone" href="tel:+5561982028845">(61) 98202-8845</a></dd>
+        </dl>
+        <div style="display:flex;flex-direction:column;gap:12px;justify-content:center">
+          <a class="btn btn-primary js-wa" data-cta="local" href="#contato"><svg><use href="#i-wa"/></svg>Agendar avaliação</a>
+          <a class="btn btn-ghost" id="cfg-maps" href="#" target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Maria Saraiva — Estética Avançada</strong></p>
+    <p>Responsável técnica: Maria Saraiva — Enfermeira — COREN-DF 687.614</p>
+    <p>WhatsApp: <a class="js-wa" data-cta="rodape" id="cfg-wa-rodape" href="https://wa.me/5561982028845">(61) 98202-8845</a></p>
+    <p>Procedimentos realizados somente após avaliação presencial. Os resultados variam de pessoa para pessoa.</p>
+    <p><button type="button" class="js-privacy">Política de privacidade</button> · <button type="button" id="cookie-reopen">Preferências de cookies</button></p>
+  </div>
+</footer>
+
+<a class="wa-float js-wa" data-cta="flutuante" href="#contato" aria-label="Falar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<div class="cookie" id="cookie" role="dialog" aria-live="polite" aria-label="Aviso de cookies">
+  <p>Usamos cookies para medir as visitas e entender quais anúncios trazem pessoas até aqui. Você pode aceitar ou recusar; o site funciona normalmente nos dois casos. <button type="button" class="js-privacy" style="background:none;border:0;font:inherit;text-decoration:underline;color:inherit;cursor:pointer">Saiba mais</button></p>
+  <div class="row">
+    <button class="btn btn-ghost" id="cookie-no" type="button">Recusar</button>
+    <button class="btn btn-ghost" id="cookie-yes" type="button">Aceitar</button>
+  </div>
+</div>
+
+<dialog id="privacy">
+  <h3>Política de privacidade</h3>
+  <p>Esta página pertence a Maria Saraiva — Estética Avançada, de responsabilidade da profissional liberal Maria Saraiva, Enfermeira, COREN-DF 687.614, controladora dos dados aqui coletados, nos termos da Lei nº 13.709/2018 (LGPD).</p>
+  <ul>
+    <li><strong>O que coletamos:</strong> nome, número de WhatsApp e o tratamento de interesse que você informar no formulário.</li>
+    <li><strong>Para quê:</strong> responder ao seu contato e agendar sua avaliação. Não vendemos nem compartilhamos seus dados para outras finalidades.</li>
+    <li><strong>Cookies:</strong> com sua autorização, usamos ferramentas do Google (Google Analytics e Google Ads) para medir visitas e o desempenho de anúncios. Não usamos seus dados para anúncios personalizados (remarketing). Você pode mudar sua escolha em “Preferências de cookies”, no rodapé.</li>
+    <li><strong>Seus direitos:</strong> você pode pedir acesso, correção ou exclusão dos seus dados pelo WhatsApp da clínica, (61) 98202-8845.</li>
+    <li><strong>Prazo:</strong> mantemos os dados de contato pelo tempo necessário ao atendimento e às obrigações legais.</li>
+  </ul>
+  <p style="margin-top:14px"><button class="btn btn-primary" type="button" id="privacy-close" style="min-height:44px">Fechar</button></p>
+</dialog>
+
+<script>
+(function () {
+  /* ============ CONFIGURAÇÃO — edite aqui ============ */
+  var CONFIG = {
+    whatsapp: '5561982028845',            // DDI + DDD + número, só dígitos
+    telefoneExibido: '(61) 98202-8845',
+    endereco: 'R. Copaíba, DF Plaza Shopping, salas 1201, 1202 e 1203 — Águas Claras, Brasília – DF, CEP 71919-540',
+    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=DF+Plaza+Shopping+Rua+Copa%C3%ADba+%C3%81guas+Claras+71919-540'
+  };
+
+  /* Título por grupo de anúncios: use ?t=rugas | labios | colageno | pele | orelha na URL final */
+  var TEMAS = {
+    rugas:    { eyebrow:'Rugas e linhas de expressão · Águas Claras', title:'Tratamento para rugas e linhas de expressão em Águas Claras', lead:'Suavize as linhas da testa e ao redor dos olhos com um plano feito depois de avaliação presencial, pensado para manter a sua expressão.', interesse:'Rugas e linhas de expressão' },
+    labios:   { eyebrow:'Preenchimento · Águas Claras', title:'Preenchimento labial e facial em Águas Claras', lead:'Contorno, volume e hidratação com foco em proporção. Tudo começa com uma avaliação presencial para entender o seu rosto e o que você deseja.', interesse:'Preenchimento labial e facial' },
+    colageno: { eyebrow:'Colágeno e flacidez · Águas Claras', title:'Bioestimulador de colágeno em Águas Claras', lead:'Estímulo à produção de colágeno para trabalhar a flacidez de forma gradual, indicado depois de avaliar a sua pele.', interesse:'Bioestimulador de colágeno' },
+    orelha:   { eyebrow:'Crianças e adultos · Águas Claras', title:'Furo de orelha humanizado em Águas Claras', lead:'Feito por enfermeira, com crioterapia, pomada anestésica e esponja vibratória para ser praticamente indolor e sem trauma, inclusive para crianças.', interesse:'Furo de orelha humanizado' },
+    pele:     { eyebrow:'Pele e corpo · Águas Claras', title:'Limpeza de pele, peelings e estética corporal em Águas Claras', lead:'Protocolos para textura, viço e contorno corporal, montados a partir da avaliação da sua pele e da sua rotina.', interesse:'Estética facial e corporal' }
+  };
+
+  var params = new URLSearchParams(location.search);
+  var tema = TEMAS[(params.get('t') || '').toLowerCase()];
+  var interessePadrao = 'Ainda não sei, quero uma avaliação';
+  if (tema) {
+    document.getElementById('hero-eyebrow').textContent = tema.eyebrow;
+    document.getElementById('hero-title').textContent = tema.title;
+    document.getElementById('hero-lead').textContent = tema.lead;
+    interessePadrao = tema.interesse;
+    var sel = document.getElementById('f-int');
+    for (var i = 0; i < sel.options.length; i++) if (sel.options[i].text === tema.interesse) sel.selectedIndex = i;
+  }
+
+  /* Dados do local */
+  document.getElementById('cfg-endereco').textContent = CONFIG.endereco;
+  var tel = document.getElementById('cfg-tel');
+  tel.textContent = CONFIG.telefoneExibido;
+  tel.href = 'tel:+' + CONFIG.whatsapp;
+  document.getElementById('cfg-maps').href = CONFIG.mapsUrl;
+
+  function waUrl(interesse, nome) {
+    var msg = 'Olá! ' + (nome ? 'Meu nome é ' + nome + '. ' : '') +
+      'Vim pelo site e gostaria de agendar uma avaliação' +
+      (interesse && interesse !== 'Ainda não sei, quero uma avaliação' ? ' sobre ' + interesse.toLowerCase() : '') + '.';
+    return 'https://wa.me/' + CONFIG.whatsapp + '?text=' + encodeURIComponent(msg);
+  }
+
+  /* Botões de WhatsApp */
+  document.querySelectorAll('.js-wa').forEach(function (a) {
+    var interesse = a.getAttribute('data-interesse') || interessePadrao;
+    a.href = waUrl(interesse);
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.addEventListener('click', function () {
+      dataLayer.push({ event: 'whatsapp_click', cta_local: a.getAttribute('data-cta') || 'outro', interesse: interesse });
+    });
+  });
+  document.querySelectorAll('.js-phone').forEach(function (a) {
+    a.addEventListener('click', function () { dataLayer.push({ event: 'phone_click' }); });
+  });
+
+  /* Máscara simples de telefone */
+  var telInput = document.getElementById('f-tel');
+  telInput.addEventListener('input', function () {
+    var d = telInput.value.replace(/\D/g, '').slice(0, 11);
+    var out = d;
+    if (d.length > 2) out = '(' + d.slice(0, 2) + ') ' + d.slice(2);
+    if (d.length > 7) out = '(' + d.slice(0, 2) + ') ' + d.slice(2, 7) + '-' + d.slice(7);
+    telInput.value = out;
+  });
+
+  /* Formulário → evento de lead + WhatsApp */
+  document.getElementById('lead-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var nome = document.getElementById('f-nome').value.trim();
+    var digits = telInput.value.replace(/\D/g, '');
+    var interesse = document.getElementById('f-int').value;
+    var ok = true;
+    if (!nome) { document.getElementById('f-nome').focus(); ok = false; }
+    if (digits.length < 10 || digits.length > 11) { document.getElementById('tel-err').style.display = 'block'; if (ok) telInput.focus(); ok = false; }
+    else document.getElementById('tel-err').style.display = 'none';
+    if (!ok) return;
+
+    /* user_data alimenta as Conversões otimizadas para leads (o Google faz o hash) */
+    dataLayer.push({
+      event: 'generate_lead',
+      interesse: interesse,
+      user_data: { phone_number: '+55' + digits }
+    });
+    var url = waUrl(interesse, nome.split(' ')[0]);
+    setTimeout(function () { window.location.href = url; }, 350);   // tempo para a tag disparar
+  });
+
+  /* Consentimento (LGPD + Modo de Consentimento v2) */
+  var banner = document.getElementById('cookie');
+  var stored = null;
+  try { stored = localStorage.getItem('ms_consent'); } catch (e) {}
+  if (!stored) banner.style.display = 'block';
+  function setConsent(granted) {
+    try { localStorage.setItem('ms_consent', granted ? 'granted' : 'denied'); } catch (e) {}
+    gtag('consent', 'update', {
+      ad_storage: granted ? 'granted' : 'denied',
+      ad_user_data: granted ? 'granted' : 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: granted ? 'granted' : 'denied'
+    });
+    dataLayer.push({ event: 'consent_update', consent: granted ? 'granted' : 'denied' });
+    banner.style.display = 'none';
+  }
+  document.getElementById('cookie-yes').addEventListener('click', function () { setConsent(true); });
+  document.getElementById('cookie-no').addEventListener('click', function () { setConsent(false); });
+  document.getElementById('cookie-reopen').addEventListener('click', function () { banner.style.display = 'block'; });
+
+  /* Política de privacidade */
+  var dlg = document.getElementById('privacy');
+  document.querySelectorAll('.js-privacy').forEach(function (b) {
+    b.addEventListener('click', function () { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); });
+  });
+  document.getElementById('privacy-close').addEventListener('click', function () { dlg.close ? dlg.close() : dlg.removeAttribute('open'); });
+})();
+</script>
+</body>
+</html>
